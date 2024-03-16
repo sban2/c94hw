@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kwitter Room</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+</head>
+<body>
+    <button id="logoutButton" class="btn btn-danger" onclick="logout()">Logout</button>
+    <h3 id="usernameDisplay"></h3>
+    <input type="text" id="roomNameInput" class="form-control" placeholder="Room Name">
+    <button id="addRoomButton" class="btn btn-success" onclick="addRoom()">Add Room</button>
+    <div id="roomList"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="kwitter_room.js"></script>
+</body>
+</html>
